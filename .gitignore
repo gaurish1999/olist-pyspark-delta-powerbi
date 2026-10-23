@@ -1,0 +1,47 @@
+# ------------------------------------------------------------
+# Data: the Olist dataset must not be redistributed in this repo
+# ------------------------------------------------------------
+data/
+
+# ------------------------------------------------------------
+# Generated Delta tables (Bronze / Silver / Gold are rebuilt by the notebooks)
+# ------------------------------------------------------------
+delta/
+
+# ------------------------------------------------------------
+# Spark local artifacts created when running in local mode
+# ------------------------------------------------------------
+spark-warehouse/
+metastore_db/
+derby.log
+
+# ------------------------------------------------------------
+# Credentials and secrets (never commit these)
+# ------------------------------------------------------------
+kaggle.json
+.env
+
+# ------------------------------------------------------------
+# Jupyter and Python caches
+# ------------------------------------------------------------
+.ipynb_checkpoints/
+__pycache__/
+*.pyc
+
+# ------------------------------------------------------------
+# Power BI temporary files
+# (A .pbix with imported data embeds the dataset. See the README notes
+#  before committing one. Uncomment the next line to keep .pbix files out.)
+# ------------------------------------------------------------
+# *.pbix
+*.pbix.bak
+.pbi/
+
+# ------------------------------------------------------------
+# Operating system / editor files
+# ------------------------------------------------------------
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
